@@ -6,5 +6,5 @@ def run():
 	filtered = filter.filter(parseCosts.parse(), 19)
 	for item in filtered:
 		costsSum += float(item['spot'])
-	print(costsSum)
+	print(costsSum*6/1000)
 run()

@@ -29,7 +29,7 @@ def parse():
 				parsedData.append(temp)
 			i = i+1
 
-	print(parsedData)
+	#print(parsedData)
 
 	#returns spot price data with associated timestamp
 	return parsedData
