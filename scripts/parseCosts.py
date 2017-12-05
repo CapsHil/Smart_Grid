@@ -24,14 +24,14 @@ def parse():
 		reader = csv.reader(csvfile, delimiter=' ', quotechar='|')
 		i = 0
 		for row in reader:
-			temp = {'spot': row[0], 'date':out[i]}
-                        if not (out[i].startswith("01-01") or out[i].startswith("04-06") or out[i].startswith("05-01") or out[i].startswith("05-08") or out[i].startswith("05-14") or out[i].startswith("05-25") or out[i].startswith("07-14") or out[i].startswith("08-15") or out[i].startswith("11-01") or out[i].startswith("11-11") or out[i].startswith("12-25")) :
-			    parsedData.append(temp)
+			temp = {'spot': row[0].replace(',', '.'), 'date':out[i]}
+			if not (out[i].startswith("01-01") or out[i].startswith("04-06") or out[i].startswith("05-01") or out[i].startswith("05-08") or out[i].startswith("05-14") or out[i].startswith("05-25") or out[i].startswith("07-14") or out[i].startswith("08-15") or out[i].startswith("11-01") or out[i].startswith("11-11") or out[i].startswith("12-25")):
+				parsedData.append(temp)
 			i = i+1
 
-        print(json.dumps(parsedData))
+	print(parsedData)
 
 	#returns spot price data with associated timestamp
-	return json.dumps(parsedData)
+	return parsedData
 
 parse()
