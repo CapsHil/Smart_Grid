@@ -9,4 +9,5 @@ def run():
 		print(item)
 		costsSum += float(item['spot'])
 	print(costsSum*6*0.001)
+
 run()
