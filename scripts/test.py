@@ -1,0 +1,16 @@
+crwcwcre
+wracraecerwcwa
+cwecacwecwe
+cewcewcwecwe
+cwecwec
+wecewcwaecewc
+ewcewacawewc
+cweacwaec
+wecweacwea
+cwecweacwacwae
+cweacwecwacwe
+cwecweaceawc
+weacwecwe
+cewacwaecaw
+cewacewc
+aew
