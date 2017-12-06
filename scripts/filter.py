@@ -3,26 +3,10 @@ from datetime import datetime
 def filter(data, filter):
 	count = 0
 	filtered = []
-#	filtered = data
 
 	print("data length BEFORE being filtered", len(data))
 
 	data[:] = [item for item in data if datetime.strptime(item['date'], '%m-%d-%Y %H:%M:%S').hour == filter and datetime.strptime(item['date'], '%m-%d-%Y %H:%M:%S').weekday() != 5 and datetime.strptime(item['date'], '%m-%d-%Y %H:%M:%S').weekday() != 6]
-#	for item in filtered:
-#		if datetime.strptime(item['date'], '%m-%d-%Y %H:%M:%S').hour != filter or datetime.strptime(item['date'], '%m-%d-%Y %H:%M:%S').weekday() == 5 or datetime.strptime(item['date'], '%m-%d-%Y %H:%M:%S') == 6:
-#			del filtered[filtered.index(item)]
-#			count += 1
-
-#	for item in range(8760):
-#		if datetime.strptime(data[item]['date'], '%m-%d-%Y %H:%M:%S').hour == filter and datetime.strptime(data[item]['date'], '%m-%d-%Y %H:%M:%S').weekday() != 5 and datetime.strptime(data[item]['date'], '%m-%d-%Y %H:%M:%S') != 6:
-#			filtered.append(data[item])
-#			count += 1
-
-
-#	for item in data:
-#		if datetime.strptime(item['date'], '%m-%d-%Y %H:%M:%S').hour == filter and datetime.strptime(item['date'], '%m-%d-%Y %H:%M:%S').weekday() != 5 and datetime.strptime(item['date'], '%m-%d-%Y %H:%M:%S').weekday() != 6:
-#			filtered.append(item)
-#			count += 1
 
 	print("data length AFTER being filtered: ", len(data))
 	#print(filtered)
