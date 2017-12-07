@@ -23,5 +23,5 @@ def run():
 			costsSum += float(item['spot'])*0.0563
 		if hour == 04:
 			costsSum += float(item['spot'])*0.0282
-	print(costsSum*6)
+	print(costsSum*6/1000)
 run()

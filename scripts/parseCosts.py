@@ -30,7 +30,6 @@ def parse():
 				parsedData.append(temp)
 			i = i+1
 		print("\"row in header\" iterated until: ", i)
-
 	#print(parsedData)
 
 	#returns spot price data with associated timestamp
