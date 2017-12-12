@@ -18,7 +18,7 @@ def filter(data, filter):
 
 def filterfrom19to05(data):
 	filtered = []
-        data = filterWeekends(data)
+	data = filterWeekends(data)
 	for item in data:
 		#print(item['date'])
 		hour = datetime.strptime(item['date'], '%m-%d-%Y %H:%M:%S').hour
