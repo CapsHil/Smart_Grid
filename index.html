@@ -91,13 +91,21 @@
 				<div class="col-md-6 col-sm-12 col-xs-12">
 					<div class="about-me section-space-padding">
 						<h2>About Data.</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<p>Considering an electric car with a 24 kWh battery that gets discharged by 6 kWh per day during the week (monday to friday) and given the fact the car has a 7 kW quick charge and has to be fully charged each morning before 6:00.
+						</br></br>
+						Calculate (based on the collective costs of energy for 2015): 
+						</br>
+- the total collective energy cost of the vehicle if the user recharges it between 7:00PM and 8:00PM
+</br>
+- the same cost if the battery gets charged according to the tariff division given in annex
+</br>
+- the total collective energy cost for the vehicle if charged during the best period each night between 7:00PM and 6:00AM</p>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section id="services" class="services-section section-space-padding">
+		<section id="conclusion" class="services-section section-space-padding">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12">
@@ -111,25 +119,21 @@
 					<div class="col-md-4 col-sm-6">
 						<div class="services-detail">
 							<i class="fa fa-money color-4"></i>
-							<h3>Mobile Design</h3>
-							<hr>
-							<p>Rolling is a clean and beautiful template with every must features. You can use it for many purpose in website.</p>
+							<p>With those results we can see that the 19h-20h approach is the most expensive one. This is due to these schedule where prices are relatively high.</p>
 						</div>
 					</div>
 					<div class="col-md-4 col-sm-6">
 						<div class="services-detail">
 							<i class="fa fa-plug color-2"></i>
-							<h3>Tablet Design</h3>
-							<hr>
-							<p>Rolling is a clean and beautiful template with every must features. You can use it for many purpose in website.</p>
+							<p>With the night charging system according to the cost distribution, there is a significant price decrease. It's obviously a better option than 19h-20h. This is due to the lower price during the night.</p>
 						</div>
 					</div>
 					<div class="col-md-4 col-sm-6">
 						<div class="services-detail">
 							<i class="fa fa-moon-o color-3"></i>
-							<h3>Clean Code</h3>
-							<hr>
-							<p>Rolling is a clean and beautiful template with every must features. You can use it for many purpose in website.</p>
+							<p>By charging the car during the best hour of the night we get the best price of 3 cases.
+
+This is pretty obvious and predictable. They also illustrate the benefit of future Smart Home technologies which will allow us to adapt and improve our consumption.</p>
 						</div>
 					</div>
 				</div>
@@ -145,30 +149,36 @@
 							<h3>Our Code</h3>
 							<hr>
 							<div class="row text-center">
-								<div class="col-md-3 col-sm-3">
+								<div class="col-md-2 col-sm-2">
 									<div class="contact-us-detail">
 										<i class="fa fa-file-code-o color-black"></i>
 										<p><a href="https://github.com/CapsHil/Smart_Grid/blob/master/scripts/parseCosts.py" target="_blank">parseCosts.py</a></p>
 									</div>
 								</div>
-								<div class="col-md-3 col-sm-3">
+								<div class="col-md-2 col-sm-2">
 									<div class="contact-us-detail">
 										<i class="fa fa-file-code-o color-black"></i>
-										<p><a href="https://github.com/CapsHil/Smart_Grid/blob/master/scripts/parseCosts.py" target="_blank">parseCosts.py</a></p>
+										<p><a href="https://github.com/CapsHil/Smart_Grid/blob/master/scripts/filter.py" target="_blank">filter.py</a></p>
 									</div>
 								</div>
-								<div class="col-md-3 col-sm-3">
+								<div class="col-md-2 col-sm-2">
 									<div class="contact-us-detail">
 										<i class="fa fa-file-code-o color-black"></i>
-										<p><a href="https://github.com/CapsHil/Smart_Grid/blob/master/scripts/parseCosts.py" target="_blank">parseCosts.py</a></p>
+										<p><a href="https://github.com/CapsHil/Smart_Grid/blob/master/scripts/run.py" target="_blank">run.py</a></p>
 									</div>
 								</div>
-								<div class="col-md-3 col-sm-3">
+								<div class="col-md-2 col-sm-2">
 									<div class="contact-us-detail">
 										<i class="fa fa-file-code-o color-black"></i>
-										<p><a href="https://github.com/CapsHil/Smart_Grid/blob/master/scripts/parseCosts.py" target="_blank">parseCosts.py</a></p>
+										<p><a href="https://github.com/CapsHil/Smart_Grid/blob/master/scripts/run2.py" target="_blank">run2.py</a></p>
 									</div>
 								</div>
+								<div class="col-md-2 col-sm-2">
+                                                                        <div class="contact-us-detail">
+                                                                                <i class="fa fa-file-code-o color-black"></i>
+                                                                                <p><a href="https://github.com/CapsHil/Smart_Grid/blob/master/scripts/run3.py" target="_blank">run3.py</a></p>
+                                                                        </div>
+                                                                </div>
 							</div>
 						</div>
 					</div>
@@ -223,10 +233,10 @@
 			var myChart = new Chart(ctx, {
 				type: 'bar',
 				data: {
-					labels: ["Red", "Blue", "Yellow"],
+					labels: ["19h-20h", "Cost repartition", "Optimal"],
 					datasets: [{
 						label: 'Total Collective Cost',
-						data: [78, 153, 132],
+						data: [78.94, 56.01, 39.55],
 						backgroundColor: [
 							'rgba(255, 99, 132, 0.6)',
 							'rgba(54, 162, 235, 0.6)',
