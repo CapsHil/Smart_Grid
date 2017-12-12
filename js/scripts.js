@@ -110,7 +110,7 @@
 		
         $(window).load(function(){
         $(".typing").typed({
-            strings: ["Practical works.", "5A - ESIEA 2017.", "Panorama Énergétique."],    /* You can change the home section typing text from
+            strings: ["Practical works.", "5A - ESIEA 2017.", "Energy Landscape."],    /* You can change the home section typing text from
 	                                                                                            here and do not use "&" use "and" */
             typeSpeed: 50
           });
